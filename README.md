@@ -3,9 +3,9 @@ Readme
 
 Her oppdaterer vi sprint backlog. 
 
-Når dere skal endre status på oppgavene endrer dere **< font color = 'red'>** til **< font color = 'green'>** og legger til et timestamp. I Markdownpad har man en egen knapp for å generere timestamp (oppe til høyre, ser ut som en liten klokke.
+Når dere skal endre status på oppgavene endrer dere **< font color = 'red'>** til **< font color = 'green'>** og legger til et timestamp. Kanskje også bruke caps lock? Lettere å se. I Markdownpad har man en egen knapp for å generere timestamp (oppe til høyre, ser ut som en liten klokke.
 
-< font color = 'green'>startet 2/16/2014 6:34:49 PM </font>
+< font color = 'green'>STARTET 2/16/2014 6:34:49 PM </font>
 
 Fargen synes ikke på github, så når dere vil sjekke statusene kan det være en idè å synkronisere Dokumenter repositorien (om det behøves) og så åpne denne filen i Markdownpad, så synes det mye bedre.
 
