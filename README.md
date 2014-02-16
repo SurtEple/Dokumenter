@@ -23,7 +23,7 @@ Om dere har lyst til å bruke versjonsnummer: bruk formatet X.Y.Z , som tilsvare
 * Minor endres når en ny, mellomstor, funksjon er implementert - eller når et sett av nye, små, funksjoner er implementert.
 * Patch endres når vi endrer programmet men ikke implementerer noe nytt, brukes som regel til bugfixes.
 
-1.0.0, 1.0.1, 1.1.1, 0.1.2, 0.2.0, 1.2.1, 1.2.2, 1.2.3, 1.3.0 osv.
+1.0.0, 1.0.1, 1.1.1, 1.1.2, 1.2.0, 1.2.1, 1.2.2, 1.2.3, 1.3.0 osv.
 
 
 Om flere personer skal jobbe på samme fil må vi lage **branches** og så merge dem sammen.
