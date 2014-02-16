@@ -22,7 +22,7 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 # Oppsett av database - 1.1 #
 *Som kunde vil jeg at all informasjon skal lagres i database*
 
-##Installere server - ID 1.0 ##
+### Installere server - ID 1.0 ###
 
 - **Brukt tid**: 
 - **Estimert tid**: 5t 
@@ -31,7 +31,7 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 - **Kommentar**: 
 - **Estimert tid**: 5
 
-##Installere Database - ID 2.0##
+###Installere Database - ID 2.0###
 
 - **Brukt tid**: 
 - **Estimert tid**: 5
@@ -40,21 +40,21 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 - **Kommentar**: 
 
 
-## Planlegge brukertabell - ID 3.0 ##
+### Planlegge brukertabell - ID 3.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Planlegge timetabell - ID 4.0 ##
+###Planlegge timetabell - ID 4.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Planlegge prosjekttabell - ID 5.0 ##
+###Planlegge prosjekttabell - ID 5.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: 
@@ -62,84 +62,84 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 - **Kommentar**: 
 
 
-## Planlegge oppgavetabell - ID 6.0 ##
+###Planlegge oppgavetabell - ID 6.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Planlegge gruppettabell - ID 7.0 ##
+###Planlegge gruppettabell - ID 7.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Planlegge rapporttabell - ID 8.0 ##
+###Planlegge rapporttabell - ID 8.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Planlegge kalendertabell - ID 9.0 ##
+### Planlegge kalendertabell - ID 9.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Opprette brukertabell - ID 3.1 ##
+### Opprette brukertabell - ID 3.1 ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Opprette timetabell - ID 4.1 ##
+### Opprette timetabell - ID 4.1 ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Opprette prosjekttabell - ID 5.1  ##
+### Opprette prosjekttabell - ID 5.1  ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Opprette oppgavetabell - ID 6.1  ##
+###Opprette oppgavetabell - ID 6.1  ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Opprette gruppetabell - ID 7.1  ##
+### Opprette gruppetabell - ID 7.1 ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Opprette rapporttabell - ID 8.1  ##
+### Opprette rapporttabell - ID 8.1 ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-## Opprette kalendertabell - ID 9.1 ##
+### Opprette kalendertabell - ID 9.1 ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
-
-## Opprette nødvendige relasjoner - ID 10.0 ##
+- 
+### Opprette nødvendige relasjoner - ID 10.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 5
 - **Ansvar**: 
@@ -151,49 +151,49 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 # Læring og kommunikasjon med database - 1.2 #
 *Som kunde vil jeg at klient skal kunne hente ut informasjon fra database*
 
-##Installering av nødvendige utviklingsverktøy - ID 11.0 ##
+###Installering av nødvendige utviklingsverktøy - ID 11.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-##Leksjoner i .JSP og Github - ID 12.0##
+###Leksjoner i .JSP og Github - ID 12.0###
 - **Brukt tid**: 
 - **Estimert tid**: 8
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-##Åpne og lukke tilkobling til database - ID 13.0 ##
+###Åpne og lukke tilkobling til database - ID 13.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 6
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-##Spørring mot database- ID 13.1 ##
+###Spørring mot database- ID 13.1###
 - **Brukt tid**: 
 - **Estimert tid**: 11
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-##Endring i database - ID 13.2 ##
+###Endring i database - ID 13.2###
 - **Brukt tid**: 
 - **Estimert tid**: 11
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-##Sletting i database - ID 13.3 ##
+###Sletting i database - ID 13.3 ###
 - **Brukt tid**: 
 - **Estimert tid**: 11
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
 
-##Innsetting i database - ID 13.4 ##
+###Innsetting i database - ID 13.4###
 - **Brukt tid**: 
 - **Estimert tid**: 11
 - **Ansvar**: 
