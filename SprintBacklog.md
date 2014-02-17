@@ -19,7 +19,8 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 
 ----------
 
-# Oppsett av database - 1.1 #
+# Oppsett av database#
+## Prioritet 1.1  ##
 *Som kunde vil jeg at all informasjon skal lagres i database*
 
 ### Installere server - ID 1.0 ###
@@ -138,7 +139,7 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 - **Ansvar**: 
 - **Status**: <font color='red'>Ikke startet</font>  
 - **Kommentar**: 
-- 
+
 ### Opprette nødvendige relasjoner - ID 10.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 5
@@ -148,7 +149,8 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 
 ----------
 
-# Læring og kommunikasjon med database - 1.2 #
+# Læring og kommunikasjon med database#
+## Prioritet 1.2 ##
 *Som kunde vil jeg at klient skal kunne hente ut informasjon fra database*
 
 ###Installering av nødvendige utviklingsverktøy - ID 11.0 ###
