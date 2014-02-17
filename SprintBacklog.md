@@ -22,7 +22,7 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 # Oppsett av database#
 ## Prioritet 1.1  ##
 *Som kunde vil jeg at all informasjon skal lagres i database*
-
+<!--- I planleggingen inngikk også planlegging av relasjoner, campuselevene tok seg av dette --->
 ### Installere server - ID 1.0 ###
 
 - **Brukt tid**: 
@@ -42,55 +42,53 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 
 
 ### Planlegge brukertabell - ID 3.0###
-- **Brukt tid**: 
+- **Brukt tid**: 02:45 t
 - **Estimert tid**: 3
 - **Ansvar**: Bjørn
-- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>  
+- **Status**: <font color='green'>FERDIG </font>  
 - **Kommentar**: 
 
 ###Planlegge timetabell - ID 4.0###
-- **Brukt tid**: 
+- **Brukt tid**: 02:45 t
 - **Estimert tid**: 3
 - **Ansvar**: Martin
-- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>   
+- **Status**: <font color='green'>FERDIG</font>   
 - **Kommentar**: 
 
 ###Planlegge prosjekttabell - ID 5.0 ###
-- **Brukt tid**: 
+- **Brukt tid**: 02:45 t
 - **Estimert tid**: 3
 - **Ansvar**: Halvard
-- **Status**: <font color='green'>STARTET  2/17/2014 10:00 AM </font>   
+- **Status**: <font color='green'>FERDIG</font>   
 - **Kommentar**: 
 
 
 ###Planlegge oppgavetabell - ID 6.0###
-- **Brukt tid**: 
+- **Brukt tid**: 02:45 t
 - **Estimert tid**: 3
 - **Ansvar**: Kristina
-- **Status**: <font color='green'>FERDIG  2/17/2014 10:00 AM </font>
+- **Status**: <font color='green'>FERDIG </font>
 - **Kommentar**: 
 
 ###Planlegge gruppettabell - ID 7.0###
-<!--- Startet 2/17/2014 10:00 AM
-Review: 2/17/2014 11:19:12 AM --->
-- **Brukt tid**: 1t 20 minutter
+- **Brukt tid**: 00:50 t
 - **Estimert tid**: 3
 - **Ansvar**: Thea
-- **Status**: <font color='blue'>Under review</font>
+- **Status**: <font color='green'> FERDIG </font>
 - **Kommentar**: 
 
 ###Planlegge rapporttabell - ID 8.0###
-- **Brukt tid**: 30 minutter
+- **Brukt tid**: 00:20 t
 - **Estimert tid**: 3
 - **Ansvar**: Thea
-- **Status**: <font color='blue'>Under review </font>  
+- **Status**: <font color='green'>FERDIG </font>  
 - **Kommentar**: 
 
 ### Planlegge kalendertabell - ID 9.0 ###
-- **Brukt tid**: 
+- **Brukt tid**: 00:30 t
 - **Estimert tid**: 3
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Thomas
+- **Status**: <font color='green'>FERDIG </font>  
 - **Kommentar**: 
 
 ### Opprette brukertabell - ID 3.1 ###
@@ -145,8 +143,8 @@ Review: 2/17/2014 11:19:12 AM --->
 ### Opprette nødvendige relasjoner - ID 10.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 5
-- **Ansvar**: Halvard, Bjørn, Martin, Kristina
-- **Status**: <font color='GREEN'>STARTET 2/17/2014 11:00 AM </font>  
+- **Ansvar**: 
+- **Status**: <font color='red'>ikke startet </font>  
 - **Kommentar**: 
 
 ----------
@@ -158,15 +156,15 @@ Review: 2/17/2014 11:19:12 AM --->
 ###Installering av nødvendige utviklingsverktøy - ID 11.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 2
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Bjørn, Halvard, Kristina, Martin, Thea, Thomas
+- **Status**: <font color='green'>STARTET 2/17/2014 12:40:00 PM </font>    
 - **Kommentar**: 
 
 ###Leksjoner i .JSP og Github - ID 12.0###
 - **Brukt tid**: 
 - **Estimert tid**: 8
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Bjørn, Halvard, Kristina, Martin, Thea, Thomas
+- **Status**: <font color='green'>STARTET 2/17/2014 12:40:00 PM </font>  
 - **Kommentar**: 
 
 ###Åpne og lukke tilkobling til database - ID 13.0 ###
