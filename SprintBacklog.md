@@ -59,7 +59,7 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: Halvard
-- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>   
+- **Status**: <font color='green'>STARTET  2/17/2014 10:00 AM </font>   
 - **Kommentar**: 
 
 
@@ -67,23 +67,23 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 - **Brukt tid**: 
 - **Estimert tid**: 3
 - **Ansvar**: Kristina
-- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>
+- **Status**: <font color='green'>FERDIG  2/17/2014 10:00 AM </font>
 - **Kommentar**: 
 
 ###Planlegge gruppettabell - ID 7.0###
-<!--- Startet 2/17/2014 10:30:16 AM
+<!--- Startet 2/17/2014 10:00 AM
 Review: 2/17/2014 11:19:12 AM --->
-- **Brukt tid**: 48 minutter
+- **Brukt tid**: 1t 20 minutter
 - **Estimert tid**: 3
 - **Ansvar**: Thea
-- **Status**: <font color='blue'>Trenger review 2/17/2014 11:19:24 AM </font>
+- **Status**: <font color='blue'>Under review</font>
 - **Kommentar**: 
 
 ###Planlegge rapporttabell - ID 8.0###
-- **Brukt tid**: 
+- **Brukt tid**: 30 minutter
 - **Estimert tid**: 3
 - **Ansvar**: Thea
-- **Status**: <font color='green'>STARTET 2/17/2014 11:20:14 AM  </font>  
+- **Status**: <font color='blue'>Under review </font>  
 - **Kommentar**: 
 
 ### Planlegge kalendertabell - ID 9.0 ###
@@ -145,8 +145,8 @@ Review: 2/17/2014 11:19:12 AM --->
 ### Opprette nødvendige relasjoner - ID 10.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 5
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Halvard, Bjørn, Martin, Kristina
+- **Status**: <font color='GREEN'>STARTET 2/17/2014 11:00 AM </font>  
 - **Kommentar**: 
 
 ----------
