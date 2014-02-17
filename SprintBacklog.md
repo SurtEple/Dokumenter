@@ -71,17 +71,19 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 - **Kommentar**: 
 
 ###Planlegge gruppettabell - ID 7.0###
-- **Brukt tid**: 
+<!--- Startet 2/17/2014 10:30:16 AM
+Review: 2/17/2014 11:19:12 AM --->
+- **Brukt tid**: 48 minutter
 - **Estimert tid**: 3
 - **Ansvar**: Thea
-- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>
+- **Status**: <font color='blue'>Trenger review 2/17/2014 11:19:24 AM </font>
 - **Kommentar**: 
 
 ###Planlegge rapporttabell - ID 8.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Thea
+- **Status**: <font color='green'>STARTET 2/17/2014 11:20:14 AM  </font>  
 - **Kommentar**: 
 
 ### Planlegge kalendertabell - ID 9.0 ###
