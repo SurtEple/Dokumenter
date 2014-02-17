@@ -44,37 +44,37 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 ### Planlegge brukertabell - ID 3.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Bjørn
+- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>  
 - **Kommentar**: 
 
 ###Planlegge timetabell - ID 4.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Martin
+- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>   
 - **Kommentar**: 
 
 ###Planlegge prosjekttabell - ID 5.0 ###
 - **Brukt tid**: 
 - **Estimert tid**: 3
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Halvard
+- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>   
 - **Kommentar**: 
 
 
 ###Planlegge oppgavetabell - ID 6.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Kristina
+- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>
 - **Kommentar**: 
 
 ###Planlegge gruppettabell - ID 7.0###
 - **Brukt tid**: 
 - **Estimert tid**: 3
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Thea
+- **Status**: <font color='green'>STARTET  2/17/2014 10:30:16 AM </font>
 - **Kommentar**: 
 
 ###Planlegge rapporttabell - ID 8.0###
