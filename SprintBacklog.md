@@ -18,6 +18,12 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 -->
 
 ----------
+## Sprint goal ##
+Sette opp en database og kommunikasjon med denne databasen slik at det er mulig å hente ut all informasjon.
+
+
+
+
 
 # Oppsett av database#
 ## Prioritet 1.1  ##
@@ -26,11 +32,10 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 ### Installere server - ID 1.0 ###
 
 - **Brukt tid**: 
-- **Estimert tid**: 5t 
+- **Estimert tid**: 5
 - **Ansvar**: 
 - **Status**:<font color='red'>Ikke startet</font> 
 - **Kommentar**: 
-- **Estimert tid**: 5
 
 ###Installere Database - ID 2.0###
 
@@ -81,15 +86,15 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 - **Brukt tid**: 00:20 t
 - **Estimert tid**: 3
 - **Ansvar**: Thea
-- **Status**: <font color='green'>FERDIG </font>  
-- **Kommentar**: 
+- **Status**: <font color='blue'>review </font>  
+- **Kommentar**: Trenger flere opplysninger
 
 ### Planlegge kalendertabell - ID 9.0 ###
 - **Brukt tid**: 00:30 t
 - **Estimert tid**: 3
 - **Ansvar**: Thomas
-- **Status**: <font color='green'>FERDIG </font>  
-- **Kommentar**: 
+- **Status**: <font color='blue'>review </font>  
+- **Kommentar**: Trenger flere opplysninger
 
 ### Opprette brukertabell - ID 3.1 ###
 - **Brukt tid**: 
