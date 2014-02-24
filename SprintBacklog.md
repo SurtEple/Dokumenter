@@ -197,7 +197,7 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 - **Brukt tid**: 
 - **Estimert tid**: 11
 - **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Status**: <font color='green'>STARTET</font>  
 - **Kommentar**: 
 
 ###Innsetting i database - ID 13.4###
