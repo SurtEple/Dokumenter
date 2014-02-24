@@ -22,7 +22,7 @@ Om dere vil at noen skal se gjennom arbeidet deres kan dere sette fargen til 'bl
 Sette opp en database og kommunikasjon med denne databasen slik at det er mulig å hente ut all informasjon.
 
 
-
+**Gjenstående: 14t **
 
 
 # Oppsett av database#
@@ -146,10 +146,10 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 - **Kommentar**: 
 
 ### Opprette nødvendige relasjoner - ID 10.0 ###
-- **Brukt tid**: 
+- **Brukt tid**: ??
 - **Estimert tid**: 5
-- **Ansvar**: 
-- **Status**: <font color='red'>ikke startet </font>  
+- **Ansvar**: Halvard
+- **Status**: <font color='GREEN'>FERDIG </font>  
 - **Kommentar**: 
 
 ----------
@@ -175,7 +175,7 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 ###Åpne og lukke tilkobling til database - ID 13.0 ###
 - **Brukt tid**: ???
 - **Estimert tid**: 6
-- **Ansvar**: ???
+- **Ansvar**: Martin
 - **Status**: <font color='green'>FERDIG</font>  
 - **Kommentar**: 
 
@@ -189,15 +189,15 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 ###Endring i database - ID 13.2###
 - **Brukt tid**: 
 - **Estimert tid**: 11
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Thomas
+- **Status**: <font color='green'>STARTET  2/24/2014 10:19:13 AM </font>  
 - **Kommentar**: 
 
 ###Sletting i database - ID 13.3 ###
 - **Brukt tid**: 
 - **Estimert tid**: 11
-- **Ansvar**: 
-- **Status**: <font color='green'>STARTET</font>  
+- **Ansvar**: Kristina
+- **Status**: <font color='green'>STARTET 2/24/2014 10:19:13 AM </font>  
 - **Kommentar**: 
 
 ###Innsetting i database - ID 13.4###
