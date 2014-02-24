@@ -97,38 +97,38 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 - **Kommentar**: Trenger flere opplysninger
 
 ### Opprette brukertabell - ID 3.1 ###
-- **Brukt tid**: 
+- **Brukt tid**: ???
 - **Estimert tid**: 2
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: ???
+- **Status**: <font color='green'>FERDIG</font>  
 - **Kommentar**: 
 
 ### Opprette timetabell - ID 4.1 ###
-- **Brukt tid**: 
+- **Brukt tid**: ???
 - **Estimert tid**: 2
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: ???
+- **Status**: <font color='green'>FERDIG</font>  
 - **Kommentar**: 
 
 ### Opprette prosjekttabell - ID 5.1  ###
-- **Brukt tid**: 
+- **Brukt tid**: ???
 - **Estimert tid**: 2
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: ???
+- **Status**: <font color='green'>FERDIG</font>  
 - **Kommentar**: 
 
 ###Opprette oppgavetabell - ID 6.1  ###
-- **Brukt tid**: 
+- **Brukt tid**: ???
 - **Estimert tid**: 2
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: ???
+- **Status**: <font color='green'>FERDIG</font>  
 - **Kommentar**: 
 
 ### Opprette gruppetabell - ID 7.1 ###
-- **Brukt tid**: 
+- **Brukt tid**: ???
 - **Estimert tid**: 2
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: ???
+- **Status**: <font color='green'>FERDIG</font>  
 - **Kommentar**: 
 
 ### Opprette rapporttabell - ID 8.1 ###
@@ -159,10 +159,10 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 *Som kunde vil jeg at klient skal kunne hente ut informasjon fra database*
 
 ###Installering av nødvendige utviklingsverktøy - ID 11.0 ###
-- **Brukt tid**: 
+- **Brukt tid**: ??
 - **Estimert tid**: 2
 - **Ansvar**: Bjørn, Halvard, Kristina, Martin, Thea, Thomas
-- **Status**: <font color='green'>STARTET 2/17/2014 12:40:00 PM </font>    
+- **Status**: <font color='green'> FERDIG </font>    
 - **Kommentar**: 
 
 ###Leksjoner i .JSP og Github - ID 12.0###
@@ -173,10 +173,10 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 - **Kommentar**: 
 
 ###Åpne og lukke tilkobling til database - ID 13.0 ###
-- **Brukt tid**: 
+- **Brukt tid**: ???
 - **Estimert tid**: 6
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: ???
+- **Status**: <font color='green'>FERDIG</font>  
 - **Kommentar**: 
 
 ###Spørring mot database- ID 13.1###
