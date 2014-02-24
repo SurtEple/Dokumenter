@@ -182,8 +182,8 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 ###Spørring mot database- ID 13.1###
 - **Brukt tid**: 
 - **Estimert tid**: 11
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Bjørn
+- **Status**: <font color='green'>STARTET 2/24/2014 10:19:05 AM </font>  
 - **Kommentar**: 
 
 ###Endring i database - ID 13.2###
@@ -203,6 +203,6 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 ###Innsetting i database - ID 13.4###
 - **Brukt tid**: 
 - **Estimert tid**: 11
-- **Ansvar**: 
-- **Status**: <font color='red'>Ikke startet</font>  
+- **Ansvar**: Thea
+- **Status**: <font color='green'>STARTET 2/24/2014 10:19:13 AM </font>  
 - **Kommentar**: 
