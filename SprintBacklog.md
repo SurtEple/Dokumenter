@@ -204,5 +204,5 @@ Sette opp en database og kommunikasjon med denne databasen slik at det er mulig 
 - **Brukt tid**: 
 - **Estimert tid**: 11
 - **Ansvar**: Thea
-- **Status**: <font color='green'>STARTET 2/24/2014 10:19:13 AM </font>  
+- **Status**: <font color='green'>FERDIG</font>  
 - **Kommentar**: 
