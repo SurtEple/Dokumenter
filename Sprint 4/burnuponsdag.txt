@@ -1,4 +1,5 @@
 Kristina og halvard 6 timer på dokumentasjon
 Bjørn 1,1,1 gui mobil, testing
 martin inlogging 1,5, gruppeadministrasjon 1,5
-t/t
+Thea: 1,5t på Legg til milepæl, 0,8 t testing av Legg til milepæl
+Thomas: 2t på planlegging og testing av registrere timer
