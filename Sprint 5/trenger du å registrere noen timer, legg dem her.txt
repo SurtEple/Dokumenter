@@ -1,3 +1,8 @@
 Kristina Myrli Gundersen
 	ma 05.05.2014 - 2 t rapportgenerering
 	on 07.05.2014 - 7 t rapportgenerering
+
+Halvard Knustad
+	ma 05.05.2014 - 5 t testing & feilretting
+	on 07.05.2014 - 7 t testing & feilretting
+	
