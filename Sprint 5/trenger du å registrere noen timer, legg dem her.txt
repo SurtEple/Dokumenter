@@ -6,3 +6,6 @@ Halvard Knustad
 	ma 05.05.2014 - 5 t testing & feilretting
 	on 07.05.2014 - 7 t testing & feilretting
 	
+Martin Elvevoll 
+	ma 05.05.2014 - Sikkerhet: 4.5t XSS & 1.5t sesjonskapring
+	on 07.05.2014 - Sikkerhet: 3t sesjonskapring & 5t Brukerprofil.
