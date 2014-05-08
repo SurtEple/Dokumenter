@@ -1,0 +1,184 @@
+INSERT INTO  `HLVDKN_DB1`.`Stilling` (
+`ID` ,
+`Navn`
+)
+VALUES (
+NULL ,  'Programmerer'
+), (
+NULL ,  'Analyst'
+), (
+NULL ,  'Sekretær'
+), (
+NULL ,  'Leder'
+), (
+NULL ,  'Vaskehjelp'
+), (
+NULL ,  'Vaktmester'
+), (
+NULL ,  'Selger'
+);
+
+
+INSERT INTO  `HLVDKN_DB1`.`Bruker` (
+`ID` ,
+`Brukernavn` ,
+`Passord` ,
+`Salt` ,
+`Fornavn` ,
+`Mellomnavn` ,
+`Etternavn` ,
+`Epost` ,
+`IM` ,
+`Telefonnr` ,
+`Adresse` ,
+`Postnummer` ,
+`By` ,
+`Stilling_ID` ,
+`Administrator`
+)
+VALUES (
+NULL ,  'AnneM',  'gullfisk',  'ghttyf',  'Anne',  'Marie',  'Jacobsen',  'annemarieJ@hotmail.com',  '',  '77822676',  'Skoleveien 19',  '8514',  'Narvik',  '1',  '0'
+), (
+NULL ,  'Runescapegamer98',  'flyndre',  'ghttyf',  'Lisa',  '',  'Pettersen',  'glh98@msn.com',  '',  '90566722',  'Dronningensgate 8',  '8514',  'Narvik',  '2',  '0'
+), (
+NULL ,  'hopp',  'torsk',  'ghttyf',  'Kenneth',  '',  'Frekdriksen',  'kfrek@hotmail.com',  '',  '90067431',  'Tiurveien 9',  '9300',  'Finnsnes',  '3',  '0'
+), (
+NULL ,  'KMO',  'uer',  'ghttyf',  'Karianne',  'Malin',  'Olsen',  'olsen91@online.no',  '',  '7787611',  'Rypeveien 14',  '9300',  'Finnsnes',  '4',  '1'
+), (
+NULL ,  'Karl',  'sei',  'ghttyf',  'Karl',  '',  'Mediaa',  'karlyoyo@msn.com',  '',  '97566132',  'Byåsen A',  '8514',  'Narvik',  '5',  '0'
+), (
+NULL ,  'Jon',  'makrell',  'ghttyf',  'Jon',  'Fredrik',  'Hansen',  'jon_frekdrik@gmail.com',  '',  '77808721',  'Makrellgata 2',  '8514',  'Narvik',  '6',  '0'
+), (
+NULL ,  'HanneHaug',  'reke',  'ghttyf',  'Hanne',  '',  'Haug',  'HanHau@hotmail.com',  '',  '90655112',  'Tårnveien 43',  '8516',  'Narvik',  '6',  '0'
+), (
+NULL ,  'Sandra0',  'hummer',  'ghttyf',  'Sandra',  '',  'Myrvang',  'Sandra-Myrvang-@hotmail.com',  '',  '90675981',  'Skoleveien 2',  '8514',  'Narvik',  '7',  '0'
+);
+
+
+INSERT INTO  `HLVDKN_DB1`.`Prosjekt` (
+`ID` ,
+`Navn` ,
+`Oppsummering` ,
+`Neste_Fase`
+)
+VALUES (
+NULL ,  'Varebestillingssystem',  '- Bestiller nye varer automatisk
+- Registrer solgte varer
+- Statistikk
+',  'Sprint 2'
+), (
+NULL ,  'Mobilspill',  '- Kortspill med minitransaksjoner
+- Animasjon
+- Kortdesign',  'Forprosjekt'
+);
+
+
+INSERT INTO  `HLVDKN_DB1`.`Fase` (
+`ID` ,
+`Navn` ,
+`Dato_startet` ,
+`Dato_sluttet` ,
+`Status` ,
+`Beskrivelse` ,
+`Prosjekt_ID`
+)
+VALUES (
+NULL ,  'Sprint 2',  '2014-02-01',  '2014-03-01',  'Aktiv',  'Fullførelse av grafisk grensesnitt med alle funksjoner og animasjoner.',  '1'
+), (
+NULL ,  'Forprosjekt',  '2014-02-12',  '',  'Avsluttet',  'Kartlegge krav og planlegge utførelse av prosjekt.',  '2'
+);
+
+
+INSERT INTO  `HLVDKN_DB1`.`Oppgave` (
+`ID` ,
+`Prosjekt_ID` ,
+`Foreldreoppgave_ID` ,
+`EstimertTid` ,
+`Tittel` ,
+`Beskrivelse` ,
+`Ferdig` ,
+`Brukt_tid` ,
+`Dato_begynt` ,
+`Dato_ferdig`
+)
+VALUES (
+NULL ,  '1',  '0',  '30',  'Rapportgenerering',  'Grafiske rapporter over salg av forskjellige produkter.',  '0',  '20',  '2014-02-28',  ''
+), (
+NULL ,  '1',  '0',  '15',  'Manuell redigering',  'Manuell redigering av solgte enheter og bestillinger.',  '0',  '5',  '2014-02-10',  ''
+);
+
+
+INSERT INTO  `HLVDKN_DB1`.`Team` (
+`ID` ,
+`Teamleader` ,
+`Beskrivelse`
+)
+VALUES (
+NULL ,  '17',  'Team Alfa'
+), (
+NULL, '24', 'Team Omega'
+);
+
+
+INSERT INTO  `HLVDKN_DB1`.`KoblingBrukerTeam` (
+`Bruker_ID` ,
+`Team_ID`
+)
+VALUES (
+'17',  '5'
+), (
+'18',  '5'
+), (
+'19',  '5'
+), (
+'22',  '6'
+), (
+'23',  '6'
+), (
+'24',  '6'
+);
+
+
+INSERT INTO  `HLVDKN_DB1`.`KoblingTeamProsjekt` (
+`Team_ID` ,
+`Prosjekt_ID`
+)
+VALUES (
+'5',  '1'
+), (
+'6',  '2'
+);
+
+
+INSERT INTO  `HLVDKN_DB1`.`Time` (
+`ID` ,
+`Fra` ,
+`Til` ,
+`Pause` ,
+`Dato` ,
+`Bruker_ID` ,
+`Oppgave_ID` ,
+`Kommentar` ,
+`Sted` ,
+`Aktiv`
+)
+VALUES (
+NULL ,  '08:00:00',  '16:00:00',  '00:00:00',  '2014-02-24',  '17',  '3',  'Jobbet med en oppgaven min',  'Hjemme',  '1'
+), (
+NULL ,  '08:00:00',  '16:00:00',  '00:00:00',  '2014-02-24',  '24',  '4',  'Jobbet med oppgaven min',  'Arbeidsplass',  '1'
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
