@@ -1,0 +1,23 @@
+SELECT `Team`. `ID`, `Team`.`Teamleder`, `Team`.`Beskrivelse`, `Bruker`.`ID` FROM `Team`, `Bruker` WHERE `Team`. `ID` = `Bruker`.`ID`
+
+SELECT `Team`.`ID`, `Team`.`Teamleder`, `Team`.`Beskrivelse`, `KoblingBrukerTeam`.`Bruker_ID` FROM `Team`, `KoblingBrukerTeam` WHERE `Team`. `ID` = `KoblingBrukerTeam` .`Team_ID`
+
+//Bruker
+SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, b.Administrator, SUM(t.Totaltid), COUNT(tp.Prosjekt_ID), Team.Beskrivelse, p.Navn 
+FROM Bruker b, Timer t, Prosjekt p, KoblingTeamProsjekt tp, KoblingBrukerTeam bt, Team 
+WHERE b.ID = t.BrukerID 
+AND b.ID = bt.Bruker_ID 
+AND bt.Team_ID = tp.Team_ID 
+AND tp.Team_ID = Team.ID 
+AND tp.Prosjekt_ID = p.ID
+
+//Bruker
+SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, b.Administrator, SUM(t.Totaltid), COUNT(tp.Prosjekt_ID), Team.Beskrivelse, p.Navn FROM Bruker b, Timer t, Prosjekt p, KoblingTeamProsjekt tp, KoblingBrukerTeam bt, Team WHERE b.ID = t.BrukerID AND b.ID = bt.Bruker_ID AND bt.Team_ID = tp.Team_ID AND tp.Team_ID = Team.ID AND bt.Team_ID = Team.ID AND tp.Prosjekt_ID = p.ID
+
+//Bruker
+SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, b.Administrator `Nivå `, SUM(t.Totaltid) `Antall timer`, COUNT(tp.Prosjekt_ID) `Antall prosjekter`, Team.Beskrivelse `Team`, p.Navn `Prosjekt` FROM Bruker b, Timer t, Prosjekt p, KoblingTeamProsjekt tp, KoblingBrukerTeam bt, Team WHERE b.ID = t.BrukerID AND b.ID = bt.Bruker_ID AND bt.Team_ID = tp.Team_ID AND tp.Team_ID = Team.ID AND bt.Team_ID = Team.ID AND tp.Prosjekt_ID = p.ID
+
+//Bruker
+SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, SUM(t.Totaltid) `Antall timer`, COUNT(tp.Prosjekt_ID) `Antall prosjekter`, Team.Beskrivelse `Team`, p.Navn `Prosjekt`, b.Administrator `Nivå ` FROM Bruker b, Timer t, Prosjekt p, KoblingTeamProsjekt tp, KoblingBrukerTeam bt, Team WHERE b.ID = t.BrukerID AND b.ID = bt.Bruker_ID AND bt.Team_ID = tp.Team_ID AND tp.Team_ID = Team.ID AND bt.Team_ID = Team.ID AND tp.Prosjekt_ID = p.ID
+
+
