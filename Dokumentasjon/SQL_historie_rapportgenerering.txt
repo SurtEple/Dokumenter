@@ -20,4 +20,168 @@ SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, b.Administrator
 //Bruker
 SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, SUM(t.Totaltid) `Antall timer`, COUNT(tp.Prosjekt_ID) `Antall prosjekter`, Team.Beskrivelse `Team`, p.Navn `Prosjekt`, b.Administrator `Nivå ` FROM Bruker b, Timer t, Prosjekt p, KoblingTeamProsjekt tp, KoblingBrukerTeam bt, Team WHERE b.ID = t.BrukerID AND b.ID = bt.Bruker_ID AND bt.Team_ID = tp.Team_ID AND tp.Team_ID = Team.ID AND bt.Team_ID = Team.ID AND tp.Prosjekt_ID = p.ID
 
+//Bruker
+SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, sum(TIME_TO_SEC(t.Totaltid)) / 360 `Timer`, COUNT(tp.Prosjekt_ID) `Prosjekter`, Team.Beskrivelse `Team`, p.Navn `Prosjekt`, b.Administrator `Rettigheter` FROM Bruker b, Timer t, Prosjekt p, KoblingTeamProsjekt tp, KoblingBrukerTeam bt, Team WHERE b.ID = t.BrukerID AND b.ID = bt.Bruker_ID AND bt.Team_ID = tp.Team_ID AND tp.Team_ID = Team.ID AND bt.Team_ID = Team.ID AND tp.Prosjekt_ID = p.ID
+
+//Teambegynnelse
+SELECT t.ID, t.Beskrivelse, t.Teamleder FROM Team t
+
+//Team
+SELECT t.ID, t.Beskrivelse, t.Teamleder, COUNT(p.ID) 'Prosjekter' FROM Team t, Prosjekt p, KoblingTeamProsjekt ktp WHERE t.ID = ktp.Team_ID AND p.ID = ktp.Prosjekt_ID
+
+//Team
+SELECT t.ID, t.Beskrivelse, t.Teamleder, COUNT(p.ID) 'Prosjekter', p.Navn 'Prosjekt'
+FROM Team t, Prosjekt p, KoblingTeamProsjekt ktp 
+LEFT JOIN Team ON ktp.Team_ID = Team.ID
+LEFT JOIN Prosjekt ON ktp.Prosjekt_ID = Prosjekt.ID
+
+//Team? Det jeg vil ha men uten COUNT
+SELECT DISTINCT t.ID, t.Beskrivelse, t.Teamleder, p.ID 'Prosjekter', p.Navn 'Prosjekt'
+FROM Team t, Prosjekt p, KoblingTeamProsjekt ktp
+INNER JOIN Team ON ktp.Team_ID = Team.ID
+INNER JOIN Prosjekt ON ktp.Prosjekt_ID = Prosjekt.ID
+
+//Team - stemmer dette? Viser bare et team
+SELECT DISTINCT t.ID, t.Beskrivelse, t.Teamleder, COUNT( p.Navn ) 'Prosjekter', p.Navn 'Prosjekt'
+FROM Team t, Prosjekt p, KoblingTeamProsjekt ktp
+WHERE t.ID = ktp.Team_ID
+AND p.ID = ktp.Prosjekt_ID
+
+//TEAM
+SELECT t.ID, t.Beskrivelse, t.Teamleder, COUNT(p.ID) 'Prosjekter', p.Navn 'Prosjekt'
+FROM Team t, Prosjekt p, KoblingTeamProsjekt ktp
+INNER JOIN Team ON ktp.Team_ID = Team.ID
+INNER JOIN Prosjekt ON ktp.Prosjekt_ID = Prosjekt.ID
+GROUP BY t.ID
+
+//NB: Eksempel join og group by
+SELECT ID, Beskrivelse, Teamleder, COUNT(Prosjekt_ID) 'Prosjekter'
+FROM Team 
+LEFT JOIN KoblingTeamProsjekt ON ID = KoblingTeamProsjekt.Team_ID
+GROUP BY ID
+
+//Team foreløpig bra
+SELECT Team.ID, Team.Beskrivelse, Team.Teamleder, COUNT( Prosjekt_ID ) 'Prosjekter', Prosjekt.Navn 'Prosjekt'
+FROM Team
+LEFT JOIN KoblingTeamProsjekt ON ID = KoblingTeamProsjekt.Team_ID
+LEFT JOIN Prosjekt ON KoblingTeamProsjekt.Prosjekt_ID = Prosjekt.ID
+GROUP BY Team.ID
+
+//TEAM med teamleder fulltnavn
+SELECT Team.ID, Team.Beskrivelse, CONCAT( Bruker.Fornavn, " ", Bruker.Mellomnavn, " ", Bruker.Etternavn ) 'Teamleder', COUNT( Prosjekt_ID ) 'Prosjekter', Prosjekt.Navn 'Prosjekt'
+FROM Team
+LEFT JOIN KoblingTeamProsjekt ON ID = KoblingTeamProsjekt.Team_ID
+LEFT JOIN Prosjekt ON KoblingTeamProsjekt.Prosjekt_ID = Prosjekt.ID
+LEFT JOIN Bruker ON Team.Teamleder = Bruker.ID
+GROUP BY Team.ID
+
+//Fungerende for visual studio
+SELECT Team.ID, Team.Beskrivelse, CONCAT( Bruker.Fornavn, SPACE(1), Bruker.Mellomnavn, SPACE(1), Bruker.Etternavn ) `Teamleder`, COUNT( Prosjekt_ID ) `Prosjekter`, Prosjekt.Navn `Prosjekt`
+FROM Team
+LEFT JOIN KoblingTeamProsjekt ON ID = KoblingTeamProsjekt.Team_ID
+LEFT JOIN Prosjekt ON KoblingTeamProsjekt.Prosjekt_ID = Prosjekt.ID
+LEFT JOIN Bruker ON Team.Teamleder = Bruker.ID
+GROUP BY Team.ID
+
+//Bruker nesten ok
+SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, sum(TIME_TO_SEC(Timer.Totaltid)) / 360 `Timer`, COUNT(KoblingTeamProsjekt.Prosjekt_ID) `Prosjekter`, Team.Beskrivelse `Team`, Prosjekt.Navn `Prosjekt`, b.Administrator `Rettigheter` 
+FROM Bruker b
+JOIN KoblingBrukerTeam ON b.ID = KoblingBrukerTeam.Bruker_ID
+JOIN Team ON KoblingBrukerTeam.Team_ID = Team.ID
+JOIN KoblingTeamProsjekt ON KoblingBrukerTeam.Team_ID = KoblingTeamProsjekt.Team_ID
+JOIN Prosjekt ON KoblingTeamProsjekt.Prosjekt_ID = Prosjekt.ID
+JOIN Timer ON b.ID = Timer.BrukerID
+GROUP BY b.ID
+
+//Bruker mangler korrekt sum og count
+SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, sum(TIME_TO_SEC(Timer.Totaltid)) / 360 `Timer`, COUNT(Prosjekt.ID) `Prosjekter`, Team.Beskrivelse `Team`, Prosjekt.Navn `Prosjekt`, b.Administrator `Rettigheter` 
+FROM Bruker b
+LEFT JOIN KoblingBrukerTeam ON b.ID = KoblingBrukerTeam.Bruker_ID
+LEFT JOIN Team ON KoblingBrukerTeam.Team_ID = Team.ID
+LEFT JOIN KoblingTeamProsjekt ON KoblingBrukerTeam.Team_ID = KoblingTeamProsjekt.Team_ID
+LEFT JOIN Prosjekt ON KoblingTeamProsjekt.Prosjekt_ID = Prosjekt.ID
+LEFT JOIN Timer ON b.ID = Timer.BrukerID
+GROUP BY b.ID
+
+SELECT b.ID, b.Brukernavn, b.Fornavn, b.Mellomnavn, b.Etternavn, sum(TIME_TO_SEC(Timer.Totaltid))/360 `Timer`, COUNT(Prosjekt.Navn) `Prosjekter`, Team.Beskrivelse `Team`, Prosjekt.Navn `Prosjekt`, b.Administrator `Rettigheter` 
+FROM Bruker b
+LEFT JOIN KoblingBrukerTeam ON b.ID = KoblingBrukerTeam.Bruker_ID
+LEFT JOIN Team ON KoblingBrukerTeam.Team_ID = Team.ID
+LEFT JOIN KoblingTeamProsjekt ON KoblingBrukerTeam.Team_ID = KoblingTeamProsjekt.Team_ID
+LEFT JOIN Prosjekt ON KoblingTeamProsjekt.Prosjekt_ID = Prosjekt.ID
+LEFT JOIN Timer ON b.ID = Timer.BrukerID
+GROUP BY b.ID
+
+//Prosjekt
+SELECT p.ID, p.Navn, p.Oppsummering, Team.Beskrivelse
+FROM Prosjekt p
+LEFT JOIN KoblingTeamProsjekt ON p.ID = KoblingTeamProsjekt.Prosjekt_ID
+JOIN Team ON KoblingTeamProsjekt.Team_ID = Team.ID
+GROUP BY p.ID
+
+// Prosjekt med forbedringern
+SELECT p.ID, p.Navn, p.Oppsummering, Team.Beskrivelse, CONCAT(Bruker.Fornavn, SPACE(1), Bruker.Mellomnavn, SPACE(1), Bruker.Etternavn) `Leder`
+FROM Prosjekt p
+LEFT JOIN KoblingTeamProsjekt ON p.ID = KoblingTeamProsjekt.Prosjekt_ID
+JOIN Team ON KoblingTeamProsjekt.Team_ID = Team.ID
+JOIN Bruker ON Team.Teamleder = Bruker.ID
+GROUP BY p.ID
+
+// Prosjekt
+SELECT p.ID, p.Navn, p.Oppsummering, Team.Beskrivelse `Team`, CONCAT(Bruker.Fornavn, SPACE(1), Bruker.Mellomnavn, SPACE(1), Bruker.Etternavn) `Leder`
+FROM Prosjekt p
+LEFT JOIN KoblingTeamProsjekt ON p.ID = KoblingTeamProsjekt.Prosjekt_ID
+JOIN Team ON KoblingTeamProsjekt.Team_ID = Team.ID
+JOIN Bruker ON Team.Teamleder = Bruker.ID
+GROUP BY p.ID
+
+//Prosjekt m. alle oppgaver
+SELECT p.ID, p.Navn, p.Oppsummering, Team.Beskrivelse `Team`, CONCAT(Bruker.Fornavn, SPACE(1), Bruker.Mellomnavn, SPACE(1), Bruker.Etternavn) `Leder`, COUNT(Oppgave.Prosjekt_ID) `Oppgaver`
+FROM Prosjekt p
+LEFT JOIN KoblingTeamProsjekt ON p.ID = KoblingTeamProsjekt.Prosjekt_ID
+LEFT JOIN Team ON KoblingTeamProsjekt.Team_ID = Team.ID
+LEFT JOIN Bruker ON Team.Teamleder = Bruker.ID
+LEFT JOIN Oppgave ON p.ID = Oppgave.Prosjekt_ID
+GROUP BY p.ID
+
+//m. alle milepæler
+SELECT p.ID, p.Navn, p.Oppsummering, Team.Beskrivelse `Team`, CONCAT(Bruker.Fornavn, SPACE(1), Bruker.Mellomnavn, SPACE(1), Bruker.Etternavn) `Leder`, COUNT(Oppgave.Prosjekt_ID) `Oppgaver`, COUNT(Milepæl.Oppgave_ID) `Milepæler`
+FROM Prosjekt p
+LEFT JOIN KoblingTeamProsjekt ON p.ID = KoblingTeamProsjekt.Prosjekt_ID
+LEFT JOIN Team ON KoblingTeamProsjekt.Team_ID = Team.ID
+LEFT JOIN Bruker ON Team.Teamleder = Bruker.ID
+LEFT JOIN Oppgave ON p.ID = Oppgave.Prosjekt_ID
+LEFT JOIN Milepæl ON Oppgave.ID = Milepæl.Oppgave_ID
+GROUP BY p.ID
+
+//Prosjekt ferdig uten subreports
+SELECT p.ID, p.Navn, p.Oppsummering, Team.Beskrivelse `Team`, CONCAT(Bruker.Fornavn, SPACE(1), Bruker.Mellomnavn, SPACE(1), Bruker.Etternavn) `Leder`, COUNT(Oppgave.Prosjekt_ID) `Oppgaver`, COUNT(Milepæl.Oppgave_ID) `Milepæler`, COUNT(Fase.Prosjekt_ID) `Faser`
+FROM Prosjekt p
+LEFT JOIN KoblingTeamProsjekt ON p.ID = KoblingTeamProsjekt.Prosjekt_ID
+LEFT JOIN Team ON KoblingTeamProsjekt.Team_ID = Team.ID
+LEFT JOIN Bruker ON Team.Teamleder = Bruker.ID
+LEFT JOIN Oppgave ON p.ID = Oppgave.Prosjekt_ID
+LEFT JOIN Milepæl ON Oppgave.ID = Milepæl.Oppgave_ID
+LEFT JOIN Fase ON p.ID = Fase.Prosjekt_ID
+GROUP BY p.ID
+
+//Rettet for COUNT
+SELECT p.ID, p.Navn, p.Oppsummering, Team.Beskrivelse `Team`, CONCAT(Bruker.Fornavn, SPACE(1), Bruker.Mellomnavn, SPACE(1), Bruker.Etternavn) `Leder`, COUNT(DISTINCT Oppgave.ID) `Oppgaver`, COUNT(DISTINCT Milepæl.ID) `Milepæler`, COUNT(DISTINCT Fase.ID) `Faser`
+FROM Prosjekt p
+LEFT JOIN KoblingTeamProsjekt ON p.ID = KoblingTeamProsjekt.Prosjekt_ID
+LEFT JOIN Team ON KoblingTeamProsjekt.Team_ID = Team.ID
+LEFT JOIN Bruker ON Team.Teamleder = Bruker.ID
+LEFT JOIN Oppgave ON p.ID = Oppgave.Prosjekt_ID
+LEFT JOIN Milepæl ON Oppgave.ID = Milepæl.Oppgave_ID
+LEFT JOIN Fase ON p.ID = Fase.Prosjekt_ID
+GROUP BY p.ID
+
+
+
+
+
+
+
+
+
 
